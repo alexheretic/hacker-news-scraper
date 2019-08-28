@@ -28,7 +28,7 @@ impl<'a> AThing<'a> {
 
 /// Wrapper for a `tr` that follows a `tr.athing` html node
 ///
-/// Contains author, points & comments data.AsRef
+/// Contains author, points & comments data.
 #[derive(Debug, Copy, Clone)]
 pub struct AThingLine2<'a>(pub Node<'a>);
 

@@ -1,0 +1,5 @@
+language: rust
+rust: stable
+env: RUST_BACKTRACE=full
+os: linux
+script: cargo test --features mock-news
