@@ -1,0 +1,21 @@
+[package]
+name = "hacker-news-scraper"
+version = "0.1.0"
+authors = ["Alex Butler <alexheretic@gmail.com>"]
+edition = "2018"
+publish = false
+
+[dependencies]
+# for http fetching
+reqwest = "0.9"
+# for html parsing
+select = "0.4"
+# cli helper
+clap = "2"
+# json serialization
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+[features]
+# Instead of fetching use mock html data, used for testing
+mock-news = []
