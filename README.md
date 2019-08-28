@@ -38,3 +38,6 @@ Run the full test suite with
 ```sh
 cargo test --features mock-news
 ```
+
+## Thoughts
+I went with fairly heavy weight general purpose dependencies which in turn makes this pretty simple project heavier than it absolutely needs to be. These are the kinds of libraries I'd use in the larger project, but if this was a real project with a similarly small scope I'd probably try to make it lighter.
